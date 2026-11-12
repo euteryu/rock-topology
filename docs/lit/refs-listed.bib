@@ -1,0 +1,231 @@
+% BibTeX for papers opened in the Phase 0 listed-paper check (12 Nov 2026).
+% See docs/lit/notes-listed.md for details. Access level is stated in each note.
+
+@article{leu2014fast,
+  author  = {Leu, Leon and Berg, Steffen and Enzmann, Frieder and Armstrong, Ryan T. and Kersten, Michael},
+  title   = {Fast {X}-ray Micro-Tomography of Multiphase Flow in {Berea} Sandstone: A Sensitivity Study on Image Processing},
+  journal = {Transport in Porous Media},
+  volume  = {105},
+  number  = {2},
+  pages   = {451--469},
+  year    = {2014},
+  doi     = {10.1007/s11242-014-0378-4},
+  note    = {Verified (full text): 2.99 um Berea, 750^3 ROI, global/watershed/hysteresis threshold sweeps; LBM k 600-1000 mD (global) vs 680-780 mD (watershed); throats close at low thresholds.}
+}
+
+@article{saxena2017effect,
+  author  = {Saxena, Nishank and Hofmann, Ronny and Alpak, Faruk O. and Dietderich, Jesse and Hunter, Sander and Day-Stirrat, Ruarri J.},
+  title   = {Effect of image segmentation \& voxel size on micro-{CT} computed effective transport \& elastic properties},
+  journal = {Marine and Petroleum Geology},
+  volume  = {86},
+  pages   = {972--990},
+  year    = {2017},
+  doi     = {10.1016/j.marpetgeo.2017.07.004},
+  note    = {Verified (NOT accessed; Crossref metadata only, no abstract): title, authors, venue, pages. Content claims in brief (2/4/8 um, five sandstones) unverified.}
+}
+
+@article{saxena2018operating,
+  author  = {Saxena, Nishank and Hows, Amie and Hofmann, Ronny and Alpak, Faruk O. and Freeman, Justin and Hunter, Sander and Appel, Matthias},
+  title   = {Imaging and computational considerations for image computed permeability: Operating envelope of Digital Rock Physics},
+  journal = {Advances in Water Resources},
+  volume  = {116},
+  pages   = {127--144},
+  year    = {2018},
+  doi     = {10.1016/j.advwatres.2018.04.001},
+  note    = {Verified (abstract only): at least 10 voxels needed to resolve pore throats for single-phase flow; FOV/grain-size ratio >5 gives permeability CV <15%.}
+}
+
+@article{patel2022topological,
+  author  = {Patel, Anand V. and Hou, Tao and Beltran Rodriguez, Juan D. and Dey, Tamal K. and Birnie, Dunbar P., III},
+  title   = {Topological filtering for {3D} microstructure segmentation},
+  journal = {Computational Materials Science},
+  volume  = {202},
+  pages   = {110920},
+  year    = {2022},
+  doi     = {10.1016/j.commatsci.2021.110920},
+  eprint  = {2104.13430},
+  archivePrefix = {arXiv},
+  note    = {Verified (full text, arXiv HTML): PerSplat persistence pre-filter, not a loss; PDMS polymer and Li-ion graphite electrode; tortuosity/Minkowski/pixel accuracy; no permeability.}
+}
+
+@misc{enninful2026topology,
+  author       = {Enninful, Henry R. N. B.},
+  title        = {Topology-aware {AI} for porous materials: from structural representation to counterfactual testing and inverse design},
+  howpublished = {Research Square preprint},
+  year         = {2026},
+  doi          = {10.21203/rs.3.rs-10932955/v1},
+  note         = {Verified (abstract only, via Crossref): Perspective proposing counterfactual topology twins (descriptor-matched structures with different networks); no segmentation, imaging or permeability in abstract.}
+}
+
+@article{omrani2026topological,
+  author  = {Omrani, Hashem and Omrani, Hassan},
+  title   = {A topological and manifold framework for porous media Modeling: A review of engineering applications and mathematics},
+  journal = {Next Chemical Engineering},
+  volume  = {2},
+  pages   = {100023},
+  year    = {2026},
+  doi     = {10.1016/j.nxcen.2026.100023},
+  note    = {Verified (abstract only, via OpenAlex; CC BY-NC but ScienceDirect blocked): review of Euler/Betti/Minkowski/Hadwiger/manifold tools for porous media; no segmentation losses or experiments.}
+}
+
+@article{hayatdavoudi2026arsnet,
+  author  = {Hayatdavoudi, M. and Emami Niri, M. and Kalhor, A.},
+  title   = {Designing a dilated multi-scale attention convolutional neural network to optimize rock micro computed tomography image segmentation},
+  journal = {Journal of Petroleum Exploration and Production Technology},
+  volume  = {16},
+  pages   = {36},
+  year    = {2026},
+  doi     = {10.1007/s13202-026-02139-3},
+  note    = {Verified (full text): ARSNet 2D CNN on DRP-317 (2.25 um), BCE loss, F1/IoU + porosity + Euler number + LBM permeability; no topology loss; no metric-vs-permeability analysis.}
+}
+
+@article{wang2024comparative,
+  author  = {Wang, Hongsheng and Guo, Ruichang and Dalton, Laura E. and Crandall, Dustin and Hosseini, Seyyed A. and Fan, Ming and Chen, Cheng},
+  title   = {Comparative Assessment of {U-Net}-Based Deep Learning Models for Segmenting Microfractures and Pore Spaces in Digital Rocks},
+  journal = {SPE Journal},
+  volume  = {29},
+  number  = {11},
+  pages   = {5779--5791},
+  year    = {2024},
+  doi     = {10.2118/215117-PA},
+  note    = {Verified (full text, OSTI accepted manuscript): 5 U-Net variants, BCE loss, synthetic benchmark; LBM permeability ARE 0.193 to 0.059; higher pixel metrics not always lower permeability error. Not the Mostaghimi group.}
+}
+
+@article{andra2013benchmarksI,
+  author  = {Andr{\"a}, Heiko and Combaret, Nicolas and Dvorkin, Jack and Glatt, Erik and Han, Junehee and Kabel, Matthias and Keehm, Youngseuk and Krzikalla, Fabian and Lee, Minhui and Madonna, Claudio and Marsh, Mike and Mukerji, Tapan and Saenger, Erik H. and Sain, Ratnanabha and Saxena, Nishank and Ricker, Sarah and Wiegmann, Andreas and Zhan, Xin},
+  title   = {Digital rock physics benchmarks---Part {I}: Imaging and segmentation},
+  journal = {Computers \& Geosciences},
+  volume  = {50},
+  pages   = {25--32},
+  year    = {2013},
+  doi     = {10.1016/j.cageo.2012.09.005},
+  note    = {Verified (NOT accessed; Crossref metadata only). Sample sizes/voxel sizes taken from official supplementary repo github.com/fkrzikalla/drp-benchmarks.}
+}
+
+@article{andra2013benchmarksII,
+  author  = {Andr{\"a}, Heiko and Combaret, Nicolas and Dvorkin, Jack and Glatt, Erik and Han, Junehee and Kabel, Matthias and Keehm, Youngseuk and Krzikalla, Fabian and Lee, Minhui and Madonna, Claudio and Marsh, Mike and Mukerji, Tapan and Saenger, Erik H. and Sain, Ratnanabha and Saxena, Nishank and Ricker, Sarah and Wiegmann, Andreas and Zhan, Xin},
+  title   = {Digital rock physics benchmarks---Part {II}: Computing effective properties},
+  journal = {Computers \& Geosciences},
+  volume  = {50},
+  pages   = {33--43},
+  year    = {2013},
+  doi     = {10.1016/j.cageo.2012.09.008},
+  note    = {Verified (paper NOT accessed; supplementary simulations.xls parsed): EJ-Stokes vs LBM permeability spread about +/-4 to 38 percent by sample; check against published tables before citing.}
+}
+
+@inproceedings{acebes2026clinically,
+  author    = {Acebes, C. and Galdran, A. and Moustafa, A. H. and Clapers, M. and Camara, O.},
+  title     = {A Clinically-Informed Benchmark for Topology-Aware Coronary Artery Segmentation},
+  booktitle = {Statistical Atlases and Computational Models of the Heart (STACOM 2025)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {16459},
+  pages     = {13--22},
+  publisher = {Springer},
+  year      = {2026},
+  doi       = {10.1007/978-3-032-17734-6_2},
+  note      = {Verified (abstract only, Tecnalia repository): topology-aware losses on ASOCA give limited benefit on primary segments; annotation inconsistency dominates on secondary/tertiary.}
+}
+
+@article{robins2016percolating,
+  author  = {Robins, Vanessa and Saadatfar, Mohammad and Delgado-Friedrichs, Olaf and Sheppard, Adrian P.},
+  title   = {Percolating length scales from topological persistence analysis of micro-{CT} images of porous materials},
+  journal = {Water Resources Research},
+  volume  = {52},
+  number  = {1},
+  pages   = {315--329},
+  year    = {2016},
+  doi     = {10.1002/2015WR017937},
+  note    = {Verified (abstract only, ANU portal): persistence used to estimate percolating sphere radius; bead packs, sand, sandstones, limestone. Open ANU PDF failed to load.}
+}
+
+@article{garttner2023estimating,
+  author  = {G{\"a}rttner, Stephan and Alpak, Faruk O. and Meier, Andreas and Ray, Nadja and Frank, Florian},
+  title   = {Estimating permeability of {3D} micro-{CT} images by physics-informed {CNNs} based on {DNS}},
+  journal = {Computational Geosciences},
+  volume  = {27},
+  number  = {2},
+  pages   = {245--262},
+  year    = {2023},
+  doi     = {10.1007/s10596-022-10184-0},
+  eprint  = {2109.01818},
+  archivePrefix = {arXiv},
+  note    = {Verified (full text, arXiv HTML): voxel-graph max-flow feature into permeability CNN; Bentheimer 2.25 um 100^3 subsamples; log R2 about 0.93-0.95; segmentation errors neglected.}
+}
+
+@article{krygier2021quantifying,
+  author  = {Krygier, Michael C. and LaBonte, Tyler and Martinez, Carianne and Norris, Chance and Sharma, Krish and Collins, Lincoln N. and Mukherjee, Partha P. and Roberts, Scott A.},
+  title   = {Quantifying the unknown impact of segmentation uncertainty on image-based simulations},
+  journal = {Nature Communications},
+  volume  = {12},
+  pages   = {5414},
+  year    = {2021},
+  doi     = {10.1038/s41467-021-25493-8},
+  eprint  = {2012.09913},
+  archivePrefix = {arXiv},
+  note    = {Verified (full text, arXiv PDF): BCNN probability maps propagated to physics; woven composite (Stokes permeability, beta-distributed), graphite electrodes, torso; no rock; no metric ranking.}
+}
+
+@inproceedings{kirchhoff2024skeleton,
+  author    = {Kirchhoff, Yannick and Rokuss, Maximilian R. and Roy, Saikat and Kovacs, Balint and Ulrich, Constantin and Wald, Tassilo and Zenk, Maximilian and Vollmuth, Philipp and Kleesiek, Jens and Isensee, Fabian and Maier-Hein, Klaus},
+  title     = {Skeleton Recall Loss for Connectivity Conserving and Resource Efficient Segmentation of Thin Tubular Structures},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2024},
+  eprint    = {2404.03010},
+  archivePrefix = {arXiv},
+  note      = {Verified (full text, arXiv HTML v2): vs nnU-Net, clDice +88% time/+52% VRAM, Skeleton Recall +8%/+2%; datasets Roads, DRIVE, Cracks, ToothFairy, TopCoW; no porous media or flow.}
+}
+
+@inproceedings{shit2021cldice,
+  author    = {Shit, Suprosanna and Paetzold, Johannes C. and Sekuboyina, Anjany and Ezhov, Ivan and Unger, Alexander and Zhylka, Andrey and Pluim, Josien P. W. and Bauer, Ulrich and Menze, Bjoern H.},
+  title     = {cl{D}ice -- a Novel Topology-Preserving Loss Function for Tubular Structure Segmentation},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2021},
+  doi       = {10.1109/CVPR46437.2021.01629},
+  eprint    = {2003.07311},
+  archivePrefix = {arXiv},
+  note      = {Verified (full text, ar5iv): homotopy-equivalence corollary for hard clDice under skeleton-inclusion assumptions; tubular scope stated; soft-skeleton k must be >= max radius.}
+}
+
+@misc{owusuansah2026same,
+  author       = {Owusu-Ansah, M. and Lee, K. and Venugopal, V. and Jawaid, M. M. and Duan, W. and Brown, J.},
+  title        = {Same Branches, Different Trees: A Bifurcation Connectedness Metric for Coronary Artery Segmentation and {FFR-CT} Decision Agreement},
+  howpublished = {arXiv:2607.28327, accepted at STACOM 2026},
+  year         = {2026},
+  eprint       = {2607.28327},
+  archivePrefix = {arXiv},
+  note         = {Verified (full text, arXiv HTML): rank-regression + partial rank correlations, patient-clustered GEE with six metrics, clustered bootstrap B=2000 by case, Wilcoxon/McNemar + Holm; clDice did not improve FFR agreement.}
+}
+
+@article{marfo2026digital,
+  author  = {Marfo, William Apau and Ampomah, William and Rahnema, Hamid and Oliva, Carlos Ronaldo and Akpabli, Godsway and Duartey, Kwamena Opoku and Appiah, Elizabeth Akonobea and Agyei, Sylvester and Adjimah, Jacqueline Margaret},
+  title   = {Digital Rock Segmentation with Uncertainty Quantification for Geological {CO2} Storage: From Image Accuracy to Carbon Storage Reliability},
+  journal = {Advances in Carbon Neutrality},
+  volume  = {1},
+  number  = {2},
+  pages   = {6},
+  year    = {2026},
+  doi     = {10.3390/acn1020006},
+  note    = {Verified (full 154-entry reference list via Crossref; body not re-read this pass): no cited work trains a topology-aware loss for rock or ranks metrics vs permeability error.}
+}
+
+@article{hayatdavoudi2025comparative,
+  author  = {Hayatdavoudi, M. and Emami Niri, M. and Kalhor, A.},
+  title   = {Comparative analysis of sandstone microtomographic image segmentation using advanced convolutional neural networks with pixelwise and physical accuracy evaluation},
+  journal = {Scientific Reports},
+  volume  = {15},
+  pages   = {22164},
+  year    = {2025},
+  doi     = {10.1038/s41598-025-07211-2},
+  note    = {Verified (full text, Europe PMC XML): 12 2D CNNs + Otsu on DRP-317, BCE loss; LBM/PNM/CFD permeability and formation factor; PNM low attributed to loss of connectivity; no topology loss.}
+}
+
+@article{phan2021automatic,
+  author  = {Phan, Johan and Ruspini, Leonardo C. and Lindseth, Frank},
+  title   = {Automatic segmentation tool for {3D} digital rocks by deep learning},
+  journal = {Scientific Reports},
+  volume  = {11},
+  pages   = {19123},
+  year    = {2021},
+  doi     = {10.1038/s41598-021-98697-z},
+  note    = {Verified (full text, PMC, last ~6k chars unread): 3-phase SE-ResNeXt U-Net on slice stacks; IoU, Euler, components; PNM k Bentheimer model 2319 vs users 1069-2294; no topology loss.}
+}

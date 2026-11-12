@@ -1,0 +1,10 @@
+[13:32:58] plates h=4: k/k_discrete-1 = -1.55e-15, k/k_continuum-1 = 3.12e-02
+[13:32:58] plates h=10: k/k_discrete-1 = -1.00e-10, k/k_continuum-1 = 5.00e-03
+[13:33:00] plates h=20: k/k_discrete-1 = -3.02e-12, k/k_continuum-1 = 1.25e-03
+[13:33:01] tube R_eq=10.03: rel err -2.703%
+[13:33:07] viscosity independence: relative spread 3.66e-07
+[13:36:12] Aitken vs long run: 0.030% (1300 vs 6200 steps)
+[13:36:12] cost 0.246 us per pore voxel per step
+[13:36:52] mirror vs buffer: 1.054%
+[13:38:55] grid refinement x1 -> x2: relative change 33.790%
+[13:39:06] PNM/LBM = 0.427 (60 of 774 throats clipped to pore size)

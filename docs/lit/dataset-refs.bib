@@ -1,0 +1,124 @@
+% Dataset papers and records opened during Phase 1 dataset verification, 2026-11-12.
+
+@misc{neumann2020drp317,
+  author    = {Neumann, Rodrigo and Andreeta, Mariane and Lucas-Oliveira, Everton},
+  title     = {11 Sandstones: raw, filtered and segmented data},
+  publisher = {Digital Rocks Portal},
+  year      = {2020},
+  doi       = {10.17612/f4h1-w124},
+  url       = {https://web.corral.tacc.utexas.edu/digitalporousmedia/DRP-317/},
+  note      = {Verified 2026-11-12: DataCite record, DRP-317_metadata.json and Corral listing. Licence ODC-BY 1.0; 11 samples x 3 volumes, each 953.6M, uint8 little-endian 1000^3, 2.25 um; binary files: "segmented at threshold level N calculated using the IsoData algorithm"; 0 = pore (histogram CSVs). DOI now resolves to digitalporousmedia.org.}
+}
+
+@article{lucasoliveira2022dib,
+  author  = {Lucas-Oliveira, Everton and Barsi-Andreeta, Mariane and Neumann, Rodrigo F. and Trevizan, Willian A. and Steiner, Mathias B. and Bonagamba, Tito J.},
+  title   = {Micro-computed tomography of sandstone rocks: Raw, filtered and segmented datasets},
+  journal = {Data in Brief},
+  volume  = {41},
+  pages   = {107893},
+  year    = {2022},
+  doi     = {10.1016/j.dib.2022.107893},
+  note    = {Verified 2026-11-12 (Europe PMC full text, PMC8844843): CC BY; SkyScan 1272, 2.25 um, 1000^3, .raw; "The grayscale image was segmented at threshold level calculated using the IsoData algorithm"; segmented images include isolated pores; lab values deferred to Neumann et al. 2021. Lists 100 kV/100 uA (conflicts with DRP metadata 50 kV/200 uA).}
+}
+
+@article{neumann2021scirep,
+  author  = {Neumann, Rodrigo F. and Barsi-Andreeta, Mariane and Lucas-Oliveira, Everton and Barbalho, Hugo and Trevizan, Willian A. and Bonagamba, Tito J. and Steiner, Mathias B.},
+  title   = {High accuracy capillary network representation in digital rock reveals permeability scaling functions},
+  journal = {Scientific Reports},
+  volume  = {11},
+  pages   = {11370},
+  year    = {2021},
+  doi     = {10.1038/s41598-021-90090-0},
+  eprint  = {2010.10679},
+  archivePrefix = {arXiv},
+  note    = {Verified 2026-11-12 (Europe PMC PMC8206086 and arXiv v2 PDF incl. SI): Table 1 lab porosity/permeability for 11 sandstones (9-386 mD); SI Table S1 IsoData thresholds; SI Table S2 PNM/RMB/CNM simulated k and uCT connected porosity; isolated pores removed (Hoshen-Kopelman); SNOW watershed used only for PNM extraction; Berea REV converges at 1000^3.}
+}
+
+@article{estevesferreira2023scidata,
+  author  = {Esteves Ferreira, Matheus and Del Grande, Mariana Rodrigues and Neumann Barros Ferreira, Rodrigo and Ferreira da Silva, Ademir and Nogueira Pereira da Silva, M{\'a}rcio and Tirapu-Azpiroz, Jaione and Lucas-Oliveira, Everton and de Ara{\'u}jo Ferreira, Arthur Gustavo and Soares, Renato and Eckardt, Christian B. and Bonagamba, Tito J. and Steiner, Mathias},
+  title   = {Full scale, microscopically resolved tomographies of sandstone and carbonate rocks augmented by experimental porosity and permeability values},
+  journal = {Scientific Data},
+  volume  = {10},
+  pages   = {368},
+  year    = {2023},
+  doi     = {10.1038/s41597-023-02259-z},
+  note    = {Verified 2026-11-12 (Europe PMC PMC10247717): 18 plugs, SkyScan 1272, 2.25 um; 3-class Multi-Otsu binarisation, 0 = void; Table 4 lab porosity and air/Klinkenberg permeability (15A Bentheimer 0.42 mD looks anomalous). Paper CC BY 4.0.}
+}
+
+@misc{estevesferreira2023figshare,
+  author    = {Esteves Ferreira, Matheus and others},
+  title     = {Full scale, microscopically resolved tomographies of sandstone and carbonate rocks augmented by experimental porosity and permeability values},
+  publisher = {figshare+},
+  year      = {2023},
+  version   = {6},
+  doi       = {10.25452/figshare.plus.21375565},
+  note      = {Verified 2026-11-12 (figshare API): licence CDLA-Sharing-1.0; 293 files, 1,530,541,492,772 bytes; binary ROI cubes 2500^3 as .raw.tar.bz2 (85-603 MB each). github.com/IBM/microCT-Dataset returned 404.}
+}
+
+@article{raeini2017gnm,
+  author  = {Raeini, Ali Q. and Bijeljic, Branko and Blunt, Martin J.},
+  title   = {Generalized network modeling: Network extraction as a coarse-scale discretization of the void space of porous media},
+  journal = {Physical Review E},
+  volume  = {96},
+  pages   = {013312},
+  year    = {2017},
+  doi     = {10.1103/PhysRevE.96.013312},
+  note    = {Verified 2026-11-12 (Spiral PDF, CC BY 4.0): Table I gives 1000^3 image, voxel size, porosity, DNS/GNM/CNM permeability (x1e-12 m^2) and formation factor for Imperial 2015 Bentheimer, Doddington, Estaillades and Ketton images.}
+}
+
+@misc{imperial2014berea,
+  author    = {{Imperial College Consortium on Pore-scale Imaging and Modelling}},
+  title     = {Berea Sandstone},
+  publisher = {figshare},
+  year      = {2014},
+  doi       = {10.6084/m9.figshare.1153794.v2},
+  note      = {Verified 2026-11-12 (figshare API): CC BY 4.0; single file Berea.7z, 3,690,231 bytes; image + networks from Dong and Blunt 2009. Imperial images page (2015 Box set) states no licence.}
+}
+
+@misc{alqahtani2021mrccm,
+  author    = {Alqahtani, Naif and Mostaghimi, Peyman and Armstrong, Ryan},
+  title     = {A Multi-Resolution Complex Carbonates Micro-CT Dataset (MRCCM)},
+  publisher = {Digital Rocks Portal},
+  year      = {2021},
+  doi       = {10.17612/3t36-q704},
+  url       = {https://web.corral.tacc.utexas.edu/digitalporousmedia/DRP-362/},
+  note      = {Verified 2026-11-12 (DRP-362 metadata and Corral listing): ODC-BY 1.0; ILS and MEC carbonates, HR 2.68 um / LR 10.72 um, HeliScan; 3-phase Avizo segmentation (watershed + hysteresis); archive zip 99.3G; per-file download.}
+}
+
+@article{alqahtani2022tipm,
+  author  = {Alqahtani, Naif J. and Niu, Yufu and Wang, Ying Da and Chung, Traiwit and Lanetc, Zakhar and Zhuravljov, Aleksandr and Armstrong, Ryan T. and Mostaghimi, Peyman},
+  title   = {Super-Resolved Segmentation of X-ray Images of Carbonate Rocks Using Deep Learning},
+  journal = {Transport in Porous Media},
+  volume  = {143},
+  number  = {2},
+  pages   = {497--525},
+  year    = {2022},
+  doi     = {10.1007/s11242-022-01781-9},
+  note    = {Verified 2026-11-12: Crossref metadata only (CC BY 4.0, bibliographic data, abstract); full text NOT opened (Springer login redirect). Linked to MRCCM via DRP-362 metadata.}
+}
+
+@misc{wang2019deeprocksr,
+  author    = {Wang, Ying Da and Armstrong, Ryan and Mostaghimi, Peyman},
+  title     = {A Diverse Super Resolution Dataset of Digital Rocks (DeepRock-SR): Sandstone, Carbonate, and Coal},
+  publisher = {Digital Rocks Portal},
+  year      = {2019},
+  doi       = {10.17612/s3m9-e024},
+  note      = {Verified 2026-11-12 (DRP-215 metadata, Corral): ODC-BY 1.0; archive 14.6G; greyscale only, LR made by MATLAB imresize downsampling.}
+}
+
+@misc{wang2019drsrd1,
+  author    = {Wang, Ying Da and Mostaghimi, Peyman and Armstrong, Ryan},
+  title     = {A Super Resolution Dataset of Digital Rocks (DRSRD1): Sandstone and Carbonate},
+  publisher = {Digital Rocks Portal},
+  year      = {2019},
+  doi       = {10.17612/P7D38H},
+  note      = {Verified 2026-11-12 (DRP-211 metadata, Corral): ODC-BY 1.0; archive 6.6G; Bentheimer 3.8 um, Estaillades 3.1 um; synthetic LR.}
+}
+
+@misc{krzikalla2012drpbenchmarks,
+  author       = {Krzikalla, Fabian and others},
+  title        = {drp-benchmarks: Supplements to "Digital Rock Physics Benchmarks"},
+  howpublished = {\url{https://github.com/fkrzikalla/drp-benchmarks}},
+  year         = {2012},
+  note         = {Verified 2026-11-12 (GitHub API tree, README, results/simulations.ods): no licence declared; Fontainebleau segmented-exxon.raw.gz 1,090,208 B, uint8 288x288x300, 7.5 um, porosity 0.147, k EJ Stokes 1914 mD / LBM 1503 mD; Berea and Grosmont values also tabulated. Andr\"a et al. 2013 papers (doi 10.1016/j.cageo.2012.09.005, .008) NOT opened.}
+}

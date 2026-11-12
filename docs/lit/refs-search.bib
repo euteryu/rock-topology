@@ -1,0 +1,224 @@
+% BibTeX for papers reported in docs/lit/notes-search.md (fresh search, 12 Nov 2026).
+% Only papers actually opened are listed. Access: FULL / ABSTRACT / SNIPPET / METADATA.
+
+@article{eshimiakhe2026bridging,
+  author  = {Eshimiakhe, Daniel and Yasin, Qamar and Sun, Mengdi and Wang, Bing and Wood, David A. and Liu, Bo},
+  title   = {Bridging the Synthetic-to-Real Domain Gap in Pore-Scale Image Segmentation: Connectivity-Preserving Strategies for Digital Rock Reservoir Characterization},
+  journal = {IEEE Transactions on Geoscience and Remote Sensing},
+  volume  = {64},
+  pages   = {4507612},
+  year    = {2026},
+  doi     = {10.1109/TGRS.2026.3745602},
+  note    = {Verified: abstract via OpenAlex and Semantic Scholar (U-Net/Swin-UNETR, four transfer regimes, high Dice but lost percolating connectivity, Connectivity Domain Gap about 1.00 vs 0.06); IEEE full text not readable, so loss type and any permeability simulation are unverified. ABSTRACT}
+}
+
+@article{fernandes2024absolute,
+  author  = {Fernandes, J{\'u}lio de Castro Vargas and Vidal, Alyne Duarte and Medeiros, Lizianne Carvalho and dos Anjos, Carlos Eduardo Menezes and Surmas, Rodrigo and Evsukoff, Alexandre Gon{\c{c}}alves},
+  title   = {Absolute permeability estimation from microtomography rock images through deep learning super-resolution and adversarial fine tuning},
+  journal = {Scientific Reports},
+  volume  = {14},
+  pages   = {16704},
+  year    = {2024},
+  doi     = {10.1038/s41598-024-67367-1},
+  note    = {Verified: full text on PMC; super-resolution net fine-tuned through a frozen permeability surrogate with an MSE permeability loss on DeePore (OpenPNM labels); MSE 0.051 to 0.013 (Table 3); no voxel or topology metrics; not segmentation. FULL}
+}
+
+@article{garfi2020sensitivity,
+  author  = {Garfi, Gaetano and John, C{\'e}dric M. and Berg, Steffen and Krevor, Samuel},
+  title   = {The Sensitivity of Estimates of Multiphase Fluid and Solid Properties of Porous Rocks to Image Processing},
+  journal = {Transport in Porous Media},
+  volume  = {131},
+  pages   = {985--1005},
+  year    = {2020},
+  doi     = {10.1007/s11242-019-01374-z},
+  note    = {Verified: full text (CC-BY, Imperial Spiral); two pipelines (NLM+watershed vs Trainable WEKA) on five rocks; permeability differences exceed porosity differences, linked to shifts in pore and throat radius distributions; voxel size not studied. FULL}
+}
+
+@article{lavrukhin2021assessing,
+  author  = {Lavrukhin, Efim V. and Gerke, Kirill M. and Romanenko, Konstantin A. and Abrosimov, Konstantin N. and Karsanina, Marina V.},
+  title   = {Assessing the fidelity of neural network-based segmentation of soil {XCT} images based on pore-scale modelling of saturated flow properties},
+  journal = {Soil and Tillage Research},
+  volume  = {209},
+  pages   = {104942},
+  year    = {2021},
+  doi     = {10.1016/j.still.2021.104942},
+  note    = {Verified: search-engine snippets only (U-Net+ResNet-101, seven soil XCT images, IoU most sensitive to porosity FP/FN, permeability via pore-scale simulation) plus the opened companion abstract EGU2020-8946; journal full text and abstract page not opened. SNIPPET}
+}
+
+@article{jiang2024segmentation,
+  author  = {Jiang, Zhenliang and Leung, Anthony Kwan and Liu, Jianbin},
+  title   = {Segmentation uncertainty of vegetated porous media propagates during {X-ray CT} image-based analysis},
+  journal = {Plant and Soil},
+  year    = {2024},
+  doi     = {10.1007/s11104-024-07030-w},
+  note    = {Verified: abstract via OpenAlex (ML framework quantifies segmentation uncertainty and propagates it to phase fractions, morphology and absolute permeability in root/bead/water CT); author list beyond the first three not checked; Springer PDF blocked. ABSTRACT}
+}
+
+@article{tang2026fracture,
+  author  = {Tang, Jiren and Chai, Jinzheng and Zhang, Xinwei and Cai, Shengyao and Xiao, Yongjun and Liu, Wenchuan and Liu, Bingxiao},
+  title   = {Fracture Network Characterization for Supercritical {CO2} Fracturing in Shale Using a Structure-Preserving Direction-Adaptive Segmentation Framework},
+  journal = {Energy \& Fuels},
+  volume  = {40},
+  number  = {35},
+  pages   = {19456--19470},
+  year    = {2026},
+  doi     = {10.1021/acs.energyfuels.6c03530},
+  note    = {Verified: abstract via OpenAlex; cites clDice and Skeleton Recall (OpenAlex citation lists); 2D structure-preserving fracture segmentation, IoU 81.75 percent, topological descriptors of stacked 3D networks; no permeability in the abstract; closed access. ABSTRACT}
+}
+
+@misc{alwan2026connectivity,
+  author       = {Alwan, Wurood S. and Choudhry, Omar and Tliba, Louey and Glover, Paul and Collier, Richard and Alghamdi, Thamer},
+  title        = {Connectivity-aware pore segmentation in carbonate {SEM} images using an attention {U-Net} with physics-aware refinement},
+  howpublished = {InterPore 2026 Annual Meeting, contribution 8841},
+  year         = {2026},
+  url          = {https://events.interpore.org/event/58/contributions/8841/},
+  note         = {Verified: conference abstract page; 2D BSE-SEM, three classes, connected-pore IoU about 0.48; no topology loss or permeability described. Author order as listed on the page (presenter Alwan). ABSTRACT}
+}
+
+@article{alwan2025quantifying,
+  author  = {Alwan, Wurood S. and Choudhry, Omar and Glover, Paul and Tliba, Louey and Collier, Richard},
+  title   = {Quantifying carbonate microstructure using classical segmentation pipelines for {CCS} and radioactive waste applications},
+  journal = {Advances in Geosciences},
+  volume  = {67},
+  pages   = {79--89},
+  year    = {2025},
+  url     = {https://adgeo.copernicus.org/articles/67/79/2025/},
+  note    = {Verified: article page and abstract; eight unsupervised classical methods plus voting on 2D carbonate SEM, pixel metrics only, no model training, permeability metadata not used. ABSTRACT}
+}
+
+@inproceedings{tavakkoli2026greyscale,
+  author    = {Tavakkoli, Omid and Wang, Ying Da and Zhao, Benzhong and Mostaghimi, Peyman and Li, Zhe and Armstrong, Ryan T.},
+  title     = {Single-Phase Greyscale Lattice {Boltzmann} Simulation for Porous Media},
+  booktitle = {39th International Symposium of the Society of Core Analysts},
+  number    = {SCA2026-037},
+  year      = {2026},
+  url       = {https://jgmaas.com/SCA/2026/SCA2026-037.pdf},
+  note      = {Verified: full PDF; greyscale Darcy-Brinkman LBM matches binary hi-res within 1 percent on a sub-volume, diverges 93 percent at the low-res full domain; Kozeny-Carman constant scales with resolution; notes threshold sensitivity of binary permeability. FULL}
+}
+
+@inproceedings{howard2018uncertainty,
+  author    = {Howard, James and Lin, Sam and Zhang, Shawn},
+  title     = {Uncertainty Quantification in Image Segmentation for Image-Based Rock Physics in a Shaly-Sandstone},
+  booktitle = {International Symposium of the Society of Core Analysts},
+  number    = {SCA2018-034},
+  address   = {Trondheim, Norway},
+  year      = {2018},
+  url       = {https://jgmaas.com/SCA/2018/SCA2018-034.pdf},
+  note      = {Verified: full PDF; ML (seeded) vs threshold-sweep segmentation with a UQ framework; over 100 percent uncertainty; connected porosity above 90 percent in all runs. FULL}
+}
+
+@article{li2024regional,
+  author  = {Li, Rui and Yang, Yi and Zhang, Yuxuan},
+  title   = {A Novel Regional-Minima Image Segmentation Method for Fluid Transport Simulations in Unresolved Rock Images},
+  journal = {Water Resources Research},
+  year    = {2024},
+  doi     = {10.1029/2023WR036855},
+  note    = {Verified: abstract via OpenAlex (gold OA); partial-volume pixels as regional minima converted to pore; permeability accuracy up 50 percent vs thresholding and 30 percent vs watershed; smaller throats. Volume and issue not checked. ABSTRACT}
+}
+
+@article{zhang2024knowledge,
+  author  = {Zhang, Jia and Ma, Gang and Yang, Zhibing and Mei, Jiangzhou and Zhang, Daren and Zhou, Wei Hong and Chang, Xiaolin},
+  title   = {Knowledge Extraction via Machine Learning Guides a Topology-Based Permeability Prediction Model},
+  journal = {Water Resources Research},
+  volume  = {60},
+  number  = {7},
+  year    = {2024},
+  doi     = {10.1029/2024WR037124},
+  note    = {Verified: abstract via OpenAlex (gold OA, CC-BY); XGBoost+SHAP on 458 samples; closeness centrality, tortuosity, porosity and throat diameter are top permeability predictors. ABSTRACT}
+}
+
+@misc{dagdelen2026tda,
+  author        = {Dagdelen, Ebru and Lalu, Catherin Neena and Karlekar, Aakash and Arora, Manav and Illingworth, Matthew and Jaquette, Jonathan and Cummings, Linda and Kondic, Lou},
+  title         = {Topological Data Analysis combined with Machine Learning for Predicting Permeability of Porous Media},
+  year          = {2026},
+  eprint        = {2605.17581},
+  archivePrefix = {arXiv},
+  note          = {Verified: arXiv abstract page (v1 17 May 2026, v2 30 Jul 2026) and full NJIT 2026 slide PDF (PuMA spheres, PH vs geometric vs SNOW2 features; MAPE about 4.7 percent). ABSTRACT + slides FULL}
+}
+
+@article{purswani2020evaluation,
+  author  = {Purswani, Prakash and Karpyn, Zuleima T. and Enab, Khaled and Xue, Yuan and Huang, Xiaolei},
+  title   = {Evaluation of image segmentation techniques for image-based rock property estimation},
+  journal = {Journal of Petroleum Science and Engineering},
+  volume  = {195},
+  pages   = {107890},
+  year    = {2020},
+  doi     = {10.1016/j.petrol.2020.107890},
+  note    = {Verified: abstract via Penn State portal; sintered glass frit, RF vs clustering vs thresholding on low-res images against hi-res benchmark; porosity, saturation, areas, Euler characteristic; permeability not in the abstract. ABSTRACT}
+}
+
+@article{niu2020digital,
+  author  = {Niu, Yufu and Mostaghimi, Peyman and Shabaninejad, Mehdi and Swietojanski, Pawel and Armstrong, Ryan T.},
+  title   = {Digital Rock Segmentation for Petrophysical Analysis With Reduced User Bias Using Convolutional Neural Networks},
+  journal = {Water Resources Research},
+  volume  = {56},
+  number  = {2},
+  pages   = {e2019WR026597},
+  year    = {2020},
+  doi     = {10.1029/2019WR026597},
+  note    = {Verified: abstract via ANU research portal; CNN vs watershed on sandstone, porosity, permeability and PSD compared; CNN has lower variance. ABSTRACT}
+}
+
+@article{andrew2018quantified,
+  author  = {Andrew, Matthew},
+  title   = {A quantified study of segmentation techniques on synthetic geological {XRM} and {FIB-SEM} images},
+  journal = {Computational Geosciences},
+  volume  = {22},
+  number  = {6},
+  pages   = {1503--1512},
+  year    = {2018},
+  doi     = {10.1007/s10596-018-9768-y},
+  note    = {Verified: abstract via OpenAlex (hybrid OA, CC-BY); synthetic known-truth images, multi-Otsu vs watershed vs ML under noise; voxel misclassification only in the abstract. ABSTRACT}
+}
+
+@article{mahdaviara2023poreskel,
+  author  = {Mahdaviara, Mehdi and Sharifi, Mohammad and Raoof, Amir},
+  title   = {{PoreSkel}: Skeletonization of grayscale micro-{CT} images of porous media using deep learning techniques},
+  journal = {Advances in Water Resources},
+  volume  = {180},
+  pages   = {104544},
+  year    = {2023},
+  doi     = {10.1016/j.advwatres.2023.104544},
+  note    = {Verified: abstract content via search-engine extract and Utrecht portal record; deep skeleton and distance map from greyscale, F1 0.964 on 20 samples; full text not read. ABSTRACT}
+}
+
+@article{jacob2021simulating,
+  author  = {Jacob, Arne and Peltz, Markus and Hale, Sina and Enzmann, Frieder and Moravcova, Olga and Warr, Laurence N. and Grathoff, Georg and Blum, Philipp and Kersten, Michael},
+  title   = {Simulating permeability reduction by clay mineral nanopores in a tight sandstone by combining computer {X-ray} microtomography and focussed ion beam scanning electron microscopy imaging},
+  journal = {Solid Earth},
+  volume  = {12},
+  pages   = {1--14},
+  year    = {2021},
+  doi     = {10.5194/se-12-1-2021},
+  note    = {Verified: open-access article page and abstract; micro-CT-only permeability 26.5 mD vs 2.9 mD measured, 1.9 mD with microporous domains; a corrigendum exists and was not checked. ABSTRACT}
+}
+
+@misc{li2026poreaware,
+  author       = {Li, Jinmiao and Pan, Jinxiao and Wu, Yanfang and Kong, Huihua and Zou, Yu and Chen, Ping},
+  title        = {Pore-Aware {Gaussian} Splatting for Structure-Preserving Super-Resolution of Digital Rock {CT} Images},
+  howpublished = {SSRN preprint},
+  year         = {2026},
+  doi          = {10.2139/ssrn.7412246},
+  note         = {Verified: OpenAlex metadata only (cites clDice; keywords pore topology, Euler characteristic); no abstract; SSRN page returned 403. METADATA}
+}
+
+@misc{xing2024east,
+  author       = {Xing, Zhihao and Yao, Jun},
+  title        = {Efficient {3D} Digital Rock Detail Reconstruction and Quality Enhancement with Super-Resolution Transformer},
+  howpublished = {InterPore 2024 Annual Meeting, contribution 6442},
+  year         = {2024},
+  url          = {https://events.interpore.org/event/46/contributions/6442/},
+  note         = {Verified: conference abstract page; SR transformer with hybrid loss, permeability relative error 35 percent (tricubic) to 8 percent; no segmentation. ABSTRACT}
+}
+
+@article{tabrizipour2026multiphase,
+  author  = {Tabrizipour, Behrad and Sadeghnejad, Saeid and Hajipour, Mastaneh and Sch{\"a}fer, Thorsten},
+  title   = {Multiphase Image Segmentation of Naturally Fractured Media: Benchmarking Deep Learning and Conventional Approaches},
+  journal = {InterPore Journal},
+  volume  = {3},
+  number  = {1},
+  pages   = {IPJ010326-5},
+  year    = {2026},
+  doi     = {10.69631/j6zv1891},
+  note    = {Verified: full PDF (CC BY-NC-ND); U-Net with inverse-frequency-weighted Dice vs watershed and multi-Otsu on fractured coal; voxel metrics and porosity only. FULL}
+}

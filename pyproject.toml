@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rocktopo"
+version = "0.1.0"
+description = "Which segmentation errors matter for permeability in digital rock?"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "scikit-image>=0.24",
+    "porespy>=3.0",
+    "openpnm>=3.4",
+    "torch>=2.2",
+    "pyyaml",
+    "tifffile",
+    "pandas",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: tests that take more than ~30 s"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]
