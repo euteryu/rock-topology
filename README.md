@@ -42,3 +42,4 @@ uv pip install --python .venv/Scripts/python.exe torch --index-url https://downl
 
 Analysis scripts in `analysis/` write to `results/<run>/`, one flow axis or crop per call,
 so every local job stays under the 1-hour cap.
+"# rock-topology" 
