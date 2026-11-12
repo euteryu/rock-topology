@@ -89,3 +89,9 @@ Phase 2 (CPU pipeline)
   (Gate 2 not reached: data download blocked).
 - Waiting on the owner: download permission or manual download; Gate 0 and Gate 1 sign-off;
   download scope for greyscale volumes (hard stop b).
+
+## 2026-11-12 (owner decision, relayed in chat)
+
+- Owner allowed downloads and approved the **22 GB option** (hard stop b): all 11 DRP-317
+  binary volumes + all 11 filtered greyscale volumes (22 x 953.6 MiB = 20.5 GiB). Raw
+  unfiltered greyscale volumes are not downloaded.
